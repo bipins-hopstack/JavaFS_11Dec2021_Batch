@@ -1,0 +1,54 @@
+==================================
+Day-1 and Day-2 Assignment:
+==================================
+1. Complete Self Learn Videos (Section-3, Lesson-1 and Lesson-2)
+   before next saturday [ very important ]---DONE
+
+2. List down Data Types in Java (with wrapper class name, memory size,
+   range)
+   in a tabular format.
+
+   byte         Byte       1 byte 		8  bits     -128 to 127
+   short        Short      2 bytes 		16 bits		-32,768 to 32,767
+   int			Integer	   4 bytes		32 bits     -2,147,483,648 to 2,147,483,647
+   long			Long	   8 bytes		64 bits     -9,223,372,036,854,775,808 to 9223372036854775807
+   
+   float		Float	   4 bytes		32 bits
+   double 		Double     8 bytes		64 bits
+	   
+   char			Character  2 bytes		16 bits
+   String		String	   -as per the length
+   
+   bool			boolean 	true/false
+
+3. Write examples for increment and decrement operators
+
+4. Write java code for below programs:
+    a. Factorial of a number
+    b. Multiplication table of a given number
+    c. nCr and nPr values
+    
+5. Write the concepts discussed about strings in the class.
+   
+   String is class/object unlike primitive data types such as int,short because the 
+   the stack space required to fit the incoming string can't be prior estimated so String reference only
+   stores the address of the strings in the heap memory 
+   
+   String in java is immutable in the sense the actual data doesn't get changed ,insted new string is 
+   created and the reference  is pointed to the new string
+
+   immutable string or objects that cannot be modified once it is created. But we can only change the reference to the object
+
+
+
+
+6. Research and write what is String pool in java
+
+String pool is nothing but a storage area in Java heap where string literals stores.
+string object occupies some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the performance also.
+To decrease the number of String objects created in the JVM the String class keeps a pool of strings.
+
+When we create a string literal, the JVM first check that literal in the String pool. If the literal is already present in the pool, it returns a reference to 
+the pooled instance. If the literal is not present in the pool, a new String object takes place in the String pool.
+
+all the String literals created with the new keyword take place in the Java heap, not in the String pool.
